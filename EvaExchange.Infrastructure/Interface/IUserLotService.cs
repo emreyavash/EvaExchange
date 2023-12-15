@@ -5,9 +5,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EveExchange.DataAccess.Abstract
+namespace EvaExchange.Infrastructure.Interface
 {
-    public interface IUserDal : IEntityDal<User>
+    public interface IUserLotService:IGenericService<UserLot>
     {
+        Task<UserLot> GetUserLotByUserId(int userId);
     }
 }

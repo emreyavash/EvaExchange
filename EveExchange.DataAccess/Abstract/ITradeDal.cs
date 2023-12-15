@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace EveExchange.DataAccess.Abstract
 {
-    public interface IUserDal : IEntityDal<User>
+    public interface ITradeDal : IEntityDal<Trade>
     {
     }
 }

@@ -6,7 +6,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="8.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="7.0.14" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EvaExchange.Business\EvaExchange.Business.csproj" />
+    <ProjectReference Include="..\EvaExchange.Infrastructure\EvaExchange.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

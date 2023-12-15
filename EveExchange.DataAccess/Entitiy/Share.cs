@@ -9,8 +9,10 @@ namespace EveExchange.DataAccess.Entitiy
     public class Share : IEntity
     {
         public string ShareName { get; set; }
-        public string NormalizedShareName { get; set; }
-        public double price { get; set; }
+        public string ShortShareName { get; set; }
+        public double Price { get; set; } 
         public int Lot { get; set; }
+        public DateTime CreatedAtTime { get; set; }
+        public DateTime UpdatedAtTime { get; set;}
     }
 }

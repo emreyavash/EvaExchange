@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EveExchange.DataAccess.Abstract
+namespace EvaExchange.Infrastructure.Interface
 {
-    public interface IUserDal : IEntityDal<User>
+    public interface IShareService :IGenericService<Share>
     {
     }
 }
