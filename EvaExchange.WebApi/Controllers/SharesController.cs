@@ -46,5 +46,11 @@ namespace EvaExchange.WebApi.Controllers
             await _shareService.Update(share);
             return Ok(Messages.Updated);
         }
+        [HttpPost("UpdateShareDeneme")]
+        public async Task<IActionResult> UpdateShareDeneme(int id)
+        {
+            await _shareService.UpdateSharePrice(id);
+            return Ok(Messages.Updated);
+        }
     }
 }

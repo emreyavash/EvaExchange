@@ -37,5 +37,11 @@ namespace EvaExchange.WebApi.Controllers
             }
             return Ok(Messages.Selled);
         }
+        [HttpGet("GetAll")]
+        public async Task<IActionResult> GetAll(int shareId)
+        {
+            var trade = await _tradeService.GettAll(shareId);
+            return Ok(trade);
+        }
     }
 }

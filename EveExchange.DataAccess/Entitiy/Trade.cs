@@ -12,6 +12,6 @@ namespace EveExchange.DataAccess.Entitiy
         public int ShareId { get; set; }
         public int Lot { get; set; }
         public bool BuyOrSell { get; set; }
-        public DateTime CreateAtTime = DateTime.Now;
+        public DateTime CreateAtTime { get; set; }
     }
 }

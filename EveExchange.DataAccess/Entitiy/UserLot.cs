@@ -11,5 +11,6 @@ namespace EveExchange.DataAccess.Entitiy
         public int UserId { get; set; }
         public int ShareId { get; set; }
         public int TotalNumberOfShare { get; set; }
+        public double TotalBalanceOfShare { get; set; }
     }
 }

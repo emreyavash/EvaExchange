@@ -9,5 +9,6 @@ namespace EvaExchange.Infrastructure.Interface
 {
     public interface IShareService :IGenericService<Share>
     {
+        public Task UpdateSharePrice(int shareId);
     }
 }

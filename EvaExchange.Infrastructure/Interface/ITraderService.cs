@@ -11,5 +11,6 @@ namespace EvaExchange.Infrastructure.Interface
     {
         Task<bool> Buy(Trade trade);
         Task<bool> Sell(Trade trade);
+        Task<List<Trade>> GettAll(int shareId);
     }
 }

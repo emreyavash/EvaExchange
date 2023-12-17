@@ -10,7 +10,7 @@ namespace EveExchange.DataAccess.EvaExchangeDbContext
 {
     public class EvaExchangeContext : DbContext
     {
-        string connectionString = "Server=localhost; User ID=root; Password=Emre*152517;  Database=EvaExchange";
+        string connectionString = "Server=94.73.149.63; User ID=emreyavas; Password=E6i8ycCaK8hdkql2%;  Database=EvaExchange";
         public DbSet<User> Users { get; set; }
         public DbSet<Portfolio> Portfolios { get; set; }
         public DbSet<Share> Shares { get; set; }

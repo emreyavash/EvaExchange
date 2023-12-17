@@ -3,6 +3,7 @@ using System;
 using EveExchange.DataAccess.EvaExchangeDbContext;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EveExchange.DataAccess.Migrations
 {
     [DbContext(typeof(EvaExchangeContext))]
-    partial class EvaExchangeContextModelSnapshot : ModelSnapshot
+    [Migration("20231216080640_TotalBalanceOfShare")]
+    partial class TotalBalanceOfShare
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -45,9 +48,6 @@ namespace EveExchange.DataAccess.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    b.Property<double>("BeforePrice")
-                        .HasColumnType("double");
-
                     b.Property<DateTime>("CreatedAtTime")
                         .HasColumnType("datetime(6)");
 
@@ -79,9 +79,6 @@ namespace EveExchange.DataAccess.Migrations
 
                     b.Property<bool>("BuyOrSell")
                         .HasColumnType("tinyint(1)");
-
-                    b.Property<DateTime>("CreateAtTime")
-                        .HasColumnType("datetime(6)");
 
                     b.Property<int>("Lot")
                         .HasColumnType("int");
@@ -129,8 +126,8 @@ namespace EveExchange.DataAccess.Migrations
                     b.Property<int>("ShareId")
                         .HasColumnType("int");
 
-                    b.Property<double>("TotalBalanceOfShare")
-                        .HasColumnType("double");
+                    b.Property<int>("TotalBalanceOfShare")
+                        .HasColumnType("int");
 
                     b.Property<int>("TotalNumberOfShare")
                         .HasColumnType("int");

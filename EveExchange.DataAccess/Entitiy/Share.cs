@@ -11,6 +11,7 @@ namespace EveExchange.DataAccess.Entitiy
         public string ShareName { get; set; }
         public string ShortShareName { get; set; }
         public double Price { get; set; } 
+        public double BeforePrice { get; set; }
         public int Lot { get; set; }
         public DateTime CreatedAtTime { get; set; }
         public DateTime UpdatedAtTime { get; set;}
